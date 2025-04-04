@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Acceptée ! - Backbone Agency</title>
+    <meta name="description" content="Merci pour votre message. L'équipe Backbone Agency vous contactera très prochainement.">
+    
+    <!-- Polices Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <style>
+        .thanks-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-highlight) 100%);
+            color: var(--color-white);
+            padding: var(--spacing-lg);
+        }
+        
+        .thanks-icon {
+            font-size: 5rem;
+            color: var(--color-accent);
+            margin-bottom: var(--spacing-md);
+            animation: pulse 2s infinite;
+        }
+        
+        .thanks-title {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .thanks-message {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: var(--spacing-lg);
+            opacity: 0.9;
+        }
+        
+        .return-btn {
+            background-color: var(--color-highlight);
+            color: var(--color-white);
+            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .return-btn:hover {
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="thanks-container">
+        <div class="thanks-icon">
+            <i data-feather="check-circle"></i>
+        </div>
+        <h1 class="thanks-title">Mission Acceptée !</h1>
+        <p class="thanks-message">Votre message a bien été reçu. Notre équipe d'experts va l'analyser et vous contactera très prochainement pour discuter de votre projet de transformation numérique.</p>
+        <a href="index.html" class="btn return-btn">Retour à l'accueil</a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Initialisation des icônes Feather
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+        });
+    </script>
+</body>
+</html>
