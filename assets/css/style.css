@@ -1,6 +1,6 @@
 /* 
 * Backbone Agency - Style principal
-* Palette de couleurs mise à jour: #1a2a44 (bleu foncé), #00ff4c (vert néon), #f4f7fa (gris clair), #ffffff (blanc)
+* Palette de couleurs: #1a2a44 (bleu foncé), #00d4ff (néon), #f4f7fa (gris clair), #ffffff (blanc)
 * Typographie: Poppins (Bold pour titres, Regular pour texte)
 */
 
@@ -14,8 +14,7 @@
 :root {
     /* Couleurs principales */
     --color-primary: #1a2a44;
-    --color-accent: #00ff4c; /* Vert néon du logo */
-    --color-accent-secondary: #00d4ff; /* Bleu néon original conservé comme couleur secondaire */
+    --color-accent: #00d4ff;
     --color-light: #f4f7fa;
     --color-white: #ffffff;
     --color-dark: #121a2e;
@@ -157,21 +156,15 @@ section {
     height: 80px;
 }
 
-/* Logo styles */
-.logo {
-    display: flex;
-    align-items: center;
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    transition: color var(--transition-fast);
 }
 
-.header-logo {
-    height: 40px;
-    width: auto;
-    transition: transform var(--transition-normal);
-    filter: drop-shadow(0 0 5px rgba(0, 255, 76, 0.5));
-}
-
-.logo a:hover .header-logo {
-    transform: scale(1.05);
+.logo span {
+    color: var(--color-accent);
 }
 
 .nav ul {
@@ -237,15 +230,11 @@ section {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
     color: var(--color-white);
     padding-top: 80px; /* Pour compenser le header fixe */
-    position: relative;
-    overflow: hidden;
 }
 
 .hero-content {
     max-width: 600px;
     margin-bottom: var(--spacing-lg);
-    position: relative;
-    z-index: 2;
 }
 
 .hero h1 {
@@ -264,40 +253,6 @@ section {
     display: flex;
     gap: var(--spacing-sm);
     flex-wrap: wrap;
-}
-
-/* Hero Logo */
-.hero-logo {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50%;
-    max-width: 500px;
-    z-index: 1;
-    opacity: 0.8;
-    animation: pulse 3s infinite ease-in-out;
-}
-
-.hero-logo-img {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 0 15px rgba(0, 255, 76, 0.7));
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 0.7;
-        filter: drop-shadow(0 0 15px rgba(0, 255, 76, 0.7));
-    }
-    50% {
-        opacity: 0.9;
-        filter: drop-shadow(0 0 25px rgba(0, 255, 76, 0.9));
-    }
-    100% {
-        opacity: 0.7;
-        filter: drop-shadow(0 0 15px rgba(0, 255, 76, 0.7));
-    }
 }
 
 /* ===== BUTTONS ===== */
@@ -573,7 +528,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(0, 255, 76, 0.3);
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.3);
 }
 
 .contact-info {
@@ -672,11 +627,6 @@ section {
     .contact-container {
         grid-template-columns: 1fr;
     }
-    
-    .hero-logo {
-        opacity: 0.4;
-        width: 60%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -709,16 +659,6 @@ section {
     .footer-links ul {
         justify-content: center;
     }
-    
-    .hero-logo {
-        position: absolute;
-        top: auto;
-        bottom: -50px;
-        right: -50px;
-        width: 80%;
-        transform: none;
-        opacity: 0.3;
-    }
 }
 
 @media (max-width: 480px) {
@@ -736,9 +676,5 @@ section {
     
     .section-header h2 {
         font-size: 2rem;
-    }
-    
-    .header-logo {
-        height: 30px;
     }
 }

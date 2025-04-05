@@ -28,6 +28,6 @@
 - [x] Optimiser les SVG et les assets
 - [x] Tester la compatibilité mobile (responsive design)
 - [x] Optimiser les performances (minification, lazy loading)
-- [x] Configurer le déploiement sur Cloudflare Pages
-- [x] Tester le site déployé
-- [x] Finaliser et livrer le projet
+- [ ] Configurer le déploiement sur Cloudflare Pages
+- [ ] Tester le site déployé
+- [ ] Finaliser et livrer le projet
