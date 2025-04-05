@@ -1,273 +1,249 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backbone Agency - Votre partenaire pour une transformation numérique réussie</title>
-    <meta name="description" content="Backbone Agency propose des solutions d'automatisation IA, création de contenus digitaux, formations en ligne et conseil pour accompagner votre transformation numérique.">
-    
-    <!-- Polices Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Backbone Agency - Votre partenaire pour une transformation numérique réussie</title>
+<meta content="Backbone Agency propose des solutions d'automatisation IA, création de contenus digitaux, formations en ligne et conseil pour accompagner votre transformation numérique." name="description"/>
+<!-- Polices Poppins -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Feather Icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+<!-- CSS -->
+<link href="assets/css/style.css" rel="stylesheet"/>
+<!-- Favicon -->
+<link href="assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
 </head>
 <body>
-    <!-- Header avec navigation fixe -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="#" id="logo-link">Backbone<span>Agency</span></a>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#boutique">Boutique</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="theme-toggle">
-                <button id="theme-toggle-btn" aria-label="Changer de thème">
-                    <i data-feather="sun"></i>
-                </button>
-            </div>
-            <div class="mobile-menu-btn">
-                <button aria-label="Menu">
-                    <i data-feather="menu"></i>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Section Accueil -->
-    <section id="accueil" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="fade-in">Votre partenaire pour une transformation numérique réussie</h1>
-                <p class="fade-in">Solutions d'automatisation IA, contenus digitaux, formations en ligne et conseil technique pour propulser votre entreprise vers l'avenir.</p>
-                <div class="cta-container fade-in">
-                    <a href="#contact" class="btn btn-primary">Commencez maintenant</a>
-                    <a href="#services" class="btn btn-outline">Découvrir nos services</a>
-                </div>
-            </div>
-            <div class="hero-svg">
-                <!-- SVG tech abstrait sera ajouté ici -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Services -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nos Services</h2>
-                <p>Des solutions innovantes pour votre transformation numérique</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i data-feather="cpu"></i>
-                    </div>
-                    <h3>Automatisation IA</h3>
-                    <p>Simplifiez vos opérations avec nos solutions intelligentes. Chatbots, workflows automatisés et outils d'analyse prédictive.</p>
-                    <a href="#contact" class="btn-service">En savoir plus</a>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i data-feather="edit-3"></i>
-                    </div>
-                    <h3>Contenus Digitaux</h3>
-                    <p>Créez des supports qui captivent et convertissent. Vidéos, articles SEO, infographies et supports marketing.</p>
-                    <a href="#contact" class="btn-service">En savoir plus</a>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i data-feather="book-open"></i>
-                    </div>
-                    <h3>Formations en Ligne</h3>
-                    <p>Formez-vous aux compétences du futur. Cours sur l'IA, le marketing digital et la transformation numérique.</p>
-                    <a href="#contact" class="btn-service">En savoir plus</a>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i data-feather="message-circle"></i>
-                    </div>
-                    <h3>Conseil</h3>
-                    <p>Un accompagnement stratégique pour vos projets. Audits, stratégies et accompagnement à la mise en œuvre.</p>
-                    <a href="#contact" class="btn-service">En savoir plus</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Compteur -->
-    <section class="counter-section">
-        <div class="container">
-            <div class="counters">
-                <div class="counter-item">
-                    <div class="counter" data-count="50">0</div>
-                    <p>Clients satisfaits</p>
-                </div>
-                <div class="counter-item">
-                    <div class="counter" data-count="1000">0</div>
-                    <p>Heures d'expertise</p>
-                </div>
-                <div class="counter-item">
-                    <div class="counter" data-count="25">0</div>
-                    <p>Projets réussis</p>
-                </div>
-                <div class="counter-item">
-                    <div class="counter" data-count="15">0</div>
-                    <p>Experts certifiés</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Projet du moment -->
-    <section class="current-project">
-        <div class="container">
-            <div class="project-content">
-                <h2>Projet du moment</h2>
-                <div class="rotating-text">
-                    <span class="text-rotate" data-rotate='["Chatbot e-commerce", "Automatisation RH", "Formation IA avancée", "Audit digital"]'></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Boutique -->
-    <section id="boutique" class="shop">
-        <div class="container">
-            <div class="section-header">
-                <h2>Notre Boutique</h2>
-                <p>Des solutions prêtes à l'emploi pour votre entreprise</p>
-            </div>
-            <div class="shop-grid">
-                <div class="product-card fade-in">
-                    <div class="product-badge">Populaire</div>
-                    <h3>Pack Automatisation Essentiel</h3>
-                    <p>Chatbot IA personnalisable + support technique (3 mois)</p>
-                    <div class="product-price">149 €</div>
-                    <a href="#" class="btn btn-shop">Ajouter au panier</a>
-                </div>
-                <div class="product-card fade-in">
-                    <h3>Formation IA pour Débutants</h3>
-                    <p>Cours en ligne avec certification et accès illimité</p>
-                    <div class="product-price">99 €</div>
-                    <a href="#" class="btn btn-shop">Ajouter au panier</a>
-                </div>
-                <div class="product-card fade-in">
-                    <h3>Pack Contenu Marketing</h3>
-                    <p>5 articles SEO optimisés + 1 infographie personnalisée</p>
-                    <div class="product-price">249 €</div>
-                    <a href="#" class="btn btn-shop">Ajouter au panier</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contactez-nous</h2>
-                <p>Discutons de votre projet de transformation numérique</p>
-            </div>
-            <div class="contact-container">
-                <form id="contact-form" action="https://formspree.io/f/xyz123" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Téléphone (optionnel)</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
-                </form>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i data-feather="mail"></i>
-                        <p>contact@backboneagency.tech</p>
-                    </div>
-                    <div class="info-item">
-                        <i data-feather="clock"></i>
-                        <p>Lun-Ven: 9h-18h</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#">Backbone<span>Agency</span></a>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="#">Mentions légales</a></li>
-                        <li><a href="#">Politique de confidentialité</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Backbone Agency. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
-
-    
-
+<!-- Header avec navigation fixe -->
+<header class="header">
+<div class="container">
+<div class="logo">
+<a href="#" id="logo-link">Backbone<span>Agency</span></a>
+</div>
+<nav class="nav">
+<ul>
+<li><a href="#accueil">Accueil</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#boutique">Boutique</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="theme-toggle">
+<button aria-label="Changer de thème" id="theme-toggle-btn">
+<i data-feather="sun"></i>
+</button>
+</div>
+<div class="mobile-menu-btn">
+<button aria-label="Menu">
+<i data-feather="menu"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Section Accueil -->
+<section class="hero" id="accueil">
+<div class="container">
+<div class="hero-content">
+<h1 class="fade-in">Votre partenaire pour une transformation numérique réussie</h1>
+<p class="fade-in">Solutions d'automatisation IA, contenus digitaux, formations en ligne et conseil technique pour propulser votre entreprise vers l'avenir.</p>
+<div class="cta-container fade-in">
+<a class="btn btn-primary" href="#contact">Commencez maintenant</a>
+<a class="btn btn-outline" href="#services">Découvrir nos services</a>
+</div>
+</div>
+<div class="hero-svg">
+<!-- SVG tech abstrait sera ajouté ici -->
+</div>
+</div>
+</section>
+<!-- Section Services -->
+<section class="services" id="services">
+<div class="container">
+<div class="section-header">
+<h2>Nos Services</h2>
+<p>Des solutions innovantes pour votre transformation numérique</p>
+</div>
+<div class="services-grid">
+<div class="service-card fade-in">
+<div class="service-icon">
+<i data-feather="cpu"></i>
+</div>
+<h3>Automatisation IA</h3>
+<p>Simplifiez vos opérations avec nos solutions intelligentes. Chatbots, workflows automatisés et outils d'analyse prédictive.</p>
+<a class="btn-service" href="#contact">En savoir plus</a>
+</div>
+<div class="service-card fade-in">
+<div class="service-icon">
+<i data-feather="edit-3"></i>
+</div>
+<h3>Contenus Digitaux</h3>
+<p>Créez des supports qui captivent et convertissent. Vidéos, articles SEO, infographies et supports marketing.</p>
+<a class="btn-service" href="#contact">En savoir plus</a>
+</div>
+<div class="service-card fade-in">
+<div class="service-icon">
+<i data-feather="book-open"></i>
+</div>
+<h3>Formations en Ligne</h3>
+<p>Formez-vous aux compétences du futur. Cours sur l'IA, le marketing digital et la transformation numérique.</p>
+<a class="btn-service" href="#contact">En savoir plus</a>
+</div>
+<div class="service-card fade-in">
+<div class="service-icon">
+<i data-feather="message-circle"></i>
+</div>
+<h3>Conseil</h3>
+<p>Un accompagnement stratégique pour vos projets. Audits, stratégies et accompagnement à la mise en œuvre.</p>
+<a class="btn-service" href="#contact">En savoir plus</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Compteur -->
+<section class="counter-section">
+<div class="container">
+<div class="counters">
+<div class="counter-item">
+<div class="counter" data-count="50">0</div>
+<p>Clients satisfaits</p>
+</div>
+<div class="counter-item">
+<div class="counter" data-count="1000">0</div>
+<p>Heures d'expertise</p>
+</div>
+<div class="counter-item">
+<div class="counter" data-count="25">0</div>
+<p>Projets réussis</p>
+</div>
+<div class="counter-item">
+<div class="counter" data-count="15">0</div>
+<p>Experts certifiés</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Projet du moment -->
+<section class="current-project">
+<div class="container">
+<div class="project-content">
+<h2>Projet du moment</h2>
+<div class="rotating-text">
+<span class="text-rotate" data-rotate='["Chatbot e-commerce", "Automatisation RH", "Formation IA avancée", "Audit digital"]'></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Boutique -->
+<section class="shop" id="boutique">
+<div class="container">
+<div class="section-header">
+<h2>Notre Boutique</h2>
+<p>Des solutions prêtes à l'emploi pour votre entreprise</p>
+</div>
+<div class="shop-grid">
+<div class="product-card fade-in">
+<div class="product-badge">Populaire</div>
+<h3>Pack Automatisation Essentiel</h3>
+<p>Chatbot IA personnalisable + support technique (3 mois)</p>
+<div class="product-price">149 €</div>
+<a class="btn btn-shop" href="#">Ajouter au panier</a>
+</div>
+<div class="product-card fade-in">
+<h3>Formation IA pour Débutants</h3>
+<p>Cours en ligne avec certification et accès illimité</p>
+<div class="product-price">99 €</div>
+<a class="btn btn-shop" href="#">Ajouter au panier</a>
+</div>
+<div class="product-card fade-in">
+<h3>Pack Contenu Marketing</h3>
+<p>5 articles SEO optimisés + 1 infographie personnalisée</p>
+<div class="product-price">249 €</div>
+<a class="btn btn-shop" href="#">Ajouter au panier</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Contact -->
+<section class="contact" id="contact">
+<div class="container">
+<div class="section-header">
+<h2>Contactez-nous</h2>
+<p>Discutons de votre projet de transformation numérique</p>
+</div>
+<div class="contact-container">
+<form action="https://formspree.io/f/xyz123" class="contact-form" id="contact-form" method="POST">
+<div class="form-group">
+<label for="name">Nom</label>
+<input id="name" name="name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input id="email" name="email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="phone">Téléphone (optionnel)</label>
+<input id="phone" name="phone" type="tel"/>
+</div>
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" required="" rows="5"></textarea>
+</div>
+<button class="btn btn-primary" type="submit">Envoyer le message</button>
+</form>
+<div class="contact-info">
+<div class="info-item">
+<i data-feather="mail"></i>
+<p>contact@backboneagency.tech</p>
+</div>
+<div class="info-item">
+<i data-feather="clock"></i>
+<p>Lun-Ven: 9h-18h</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-logo">
+<a href="#">Backbone<span>Agency</span></a>
+</div>
+<div class="footer-links">
+<ul>
+<li><a href="#">Mentions légales</a></li>
+<li><a href="#">Politique de confidentialité</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 Backbone Agency. Tous droits réservés.</p>
+</div>
+</div>
+</footer>
 <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
-    <script>
+<script src="assets/js/main.js"></script>
+<script>
         feather.replace();
     </script>
 
 
-<!-- ✅ Botnation Chatbot -->
-<script>
-  window.botnationSettings = { id: "lebotia-REPLACE_WITH_YOUR_ID" };
-  (function() {
-    var s = document.createElement("script");
-    s.src = "https://botnation.ai/js/sdk.js";
-    s.async = true;
-    document.body.appendChild(s);
-  })();
-</script>
 
 
-<!-- ✅ Botnation Chatbot intégré -->
-<script>
-  window.botnationSettings = { id: "lebotia-671f42fc58d813191008cd1d" };
-  (function() {
-    var s = document.createElement("script");
-    s.src = "https://botnation.ai/js/sdk.js";
-    s.async = true;
-    document.body.appendChild(s);
-  })();
-</script>
-
-</body>
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/64f42c58d813191008cd1d/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script></body>
 </html>
