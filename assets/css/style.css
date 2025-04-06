@@ -689,3 +689,25 @@ section {
 .nav .dropdown-menu {
     min-width: 200px;
 }
+
+
+
+/* Correction avancée pour le menu de navigation */
+.nav .dropdown-menu li {
+  white-space: nowrap;
+}
+
+.nav .dropdown-menu li a {
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav .dropdown-menu {
+  min-width: 220px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
