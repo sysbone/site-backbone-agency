@@ -16,20 +16,162 @@
     <link href="assets/css/style.css" rel="stylesheet"/>
     <!-- Favicon -->
     <link href="assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+    <style>
+        /* Styles supplémentaires pour la navigation */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--bg-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .nav .main-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav .main-menu > li {
+            position: relative;
+            margin: 0 0.5rem;
+        }
+        
+        .nav .main-menu > li > a {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.2rem;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav .main-menu > li > a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 220px;
+            background-color: var(--bg-color);
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+            padding: 0.5rem 0;
+            list-style: none;
+        }
+        
+        .nav .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .nav .dropdown-menu li a {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .nav .dropdown-menu li a:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            color: var(--primary-color);
+            padding-left: 1.75rem;
+        }
+        
+        .icon-small {
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+        }
+        
+        /* Menu mobile */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 992px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 80%;
+                max-width: 320px;
+                height: calc(100vh - 70px);
+                background-color: var(--bg-color);
+                box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+                overflow-y: auto;
+                transition: left 0.3s ease;
+            }
+            
+            .header.mobile-menu-active .nav {
+                left: 0;
+            }
+            
+            .nav .main-menu {
+                flex-direction: column;
+                padding: 1rem 0;
+            }
+            
+            .nav .main-menu > li {
+                margin: 0;
+            }
+            
+            .nav .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+            
+            .nav .dropdown.active .dropdown-menu {
+                max-height: 300px;
+            }
+            
+            .nav .dropdown > a {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header avec navigation fixe -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="#" id="logo-link">Backbone<span>Agency</span></a>
+                <a href="index.html" id="logo-link">Backbone<span>Agency</span></a>
             </div>
-            <nav class="nav">
+            <nav class="nav" role="navigation">
                 <ul class="main-menu">
                     <li><a href="#accueil">Accueil</a></li>
                     <li class="dropdown">
-                        <a href="#services">Services <i data-feather="chevron-down" class="icon-small"></i></a>
-                        <ul class="dropdown-menu">
+                        <a href="#services" aria-expanded="false" aria-haspopup="true">
+                            Services <i data-feather="chevron-down" class="icon-small"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-label="Sous-menu des services">
                             <li><a href="#automation">Automatisation IA</a></li>
                             <li><a href="#content">Contenus Digitaux</a></li>
                             <li><a href="#training">Formations</a></li>
@@ -48,8 +190,8 @@
                 </button>
             </div>
             <div class="mobile-menu-btn">
-                <button aria-label="Menu">
-                    <i data-feather="menu"></i>
+                <button aria-label="Menu" id="mobile-toggle">
+                    <i data-feather="menu" id="menu-icon"></i>
                 </button>
             </div>
         </div>
@@ -360,14 +502,14 @@
           <i data-feather="lock"></i>
         </div>
         <h3>Adoptez les bons réflexes</h3>
-        <p>Découvrez les bonnes pratiques pour un usage sécurisé de l’intelligence artificielle en entreprise.</p>
+        <p>Découvrez les bonnes pratiques pour un usage sécurisé de l'intelligence artificielle en entreprise.</p>
       </article>
       <article class="service-card">
         <div class="service-icon">
           <i data-feather="check-circle"></i>
         </div>
         <h3>Formez vos équipes</h3>
-        <p>Accédez à une formation complète incluant la sécurité numérique appliquée à l’usage de l’IA.</p>
+        <p>Accédez à une formation complète incluant la sécurité numérique appliquée à l'usage de l'IA.</p>
       </article>
     </div>
     <div class="cta-container" style="text-align:center; margin-top:2rem;">
@@ -390,7 +532,7 @@
       </article>
       <article class="service-card">
         <h3>Un cabinet RH</h3>
-        <p>Exploitez l’IA pour vos recrutements, la gestion des candidatures ou l’onboarding automatisé.</p>
+        <p>Exploitez l'IA pour vos recrutements, la gestion des candidatures ou l'onboarding automatisé.</p>
       </article>
       <article class="service-card">
         <h3>Une startup</h3>
@@ -481,16 +623,44 @@
         feather.replace();
     </script>
     
-    <!-- Code JavaScript supplémentaire pour le menu -->
+    <!-- Meilleurs scripts Javascript pour la navigation -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Menu mobile toggle
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            // Menu mobile toggle amélioré
+            const mobileToggle = document.getElementById('mobile-toggle');
             const header = document.querySelector('.header');
+            const dropdowns = document.querySelectorAll('.nav .dropdown');
+            const menuIcon = document.getElementById('menu-icon');
             
-            mobileMenuBtn.addEventListener('click', function() {
+            // Gestion du menu mobile
+            mobileToggle.addEventListener('click', function() {
                 header.classList.toggle('mobile-menu-active');
+                
+                // Changer l'icône lorsque le menu est ouvert/fermé
+                if (header.classList.contains('mobile-menu-active')) {
+                    feather.replace(menuIcon, { 'icon': 'x' });
+                } else {
+                    feather.replace(menuIcon, { 'icon': 'menu' });
+                }
             });
+            
+            // Gestion des menus déroulants en mobile
+            if (window.innerWidth <= 992) {
+                dropdowns.forEach(function(dropdown) {
+                    const dropdownLink = dropdown.querySelector('a');
+                    
+                    dropdownLink.addEventListener('click', function(e) {
+                        if (window.innerWidth <= 992) {
+                            e.preventDefault();
+                            dropdown.classList.toggle('active');
+                            
+                            // Mise à jour de l'attribut aria-expanded
+                            const expanded = dropdown.classList.contains('active');
+                            dropdownLink.setAttribute('aria-expanded', expanded);
+                        }
+                    });
+                });
+            }
             
             // Fermer le menu mobile si clic à l'extérieur
             document.addEventListener('click', function(event) {
@@ -499,22 +669,12 @@
                 
                 if (!isClickInsideNav && !isClickOnMenuBtn && header.classList.contains('mobile-menu-active')) {
                     header.classList.remove('mobile-menu-active');
+                    feather.replace(menuIcon, { 'icon': 'menu' });
                 }
             });
-        });
-    </script>
-
-    <!-- Chat Tawk.to -->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/64f42c58d813191008cd1d/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-</body>
-</html>
+            
+            // Gestion du redimensionnement de la fenêtre
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 992 && header.classList.contains('mobile-menu-active')) {
+                    header.classList.remove('mobile-menu-active');
+                    feather.
