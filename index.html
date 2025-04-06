@@ -1,401 +1,520 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Backbone Agency - Votre partenaire pour une transformation numérique réussie</title>
-<meta name="description" content="Backbone Agency: solutions d'automatisation IA, sécurité informatique, création de contenus digitaux et formations pour votre transformation numérique. Formation spéciale IA pour entreprises disponible." />
-<meta name="keywords" content="automatisation IA, sécurité informatique, formation IA entreprise, transformation numérique, chatbot, agence digitale" />
-<!-- Polices Poppins -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<!-- Feather Icons -->
-<script src="https://unpkg.com/feather-icons"></script>
-<!-- CSS -->
-<link href="assets/css/style.css" rel="stylesheet"/>
-<!-- Favicon -->
-<link href="assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Backbone Agency - Votre partenaire pour une transformation numérique réussie</title>
+    <meta name="description" content="Backbone Agency: solutions d'automatisation IA, sécurité informatique, création de contenus digitaux et formations pour votre transformation numérique. Formation spéciale IA pour entreprises disponible." />
+    <meta name="keywords" content="automatisation IA, sécurité informatique, formation IA entreprise, transformation numérique, chatbot, agence digitale" />
+    <!-- Polices Poppins -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- CSS -->
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <!-- Favicon -->
+    <link href="assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
 </head>
 <body>
-<!-- Header avec navigation fixe -->
-<header class="header">
-<div class="container">
-<div class="logo">
-<a href="#" id="logo-link">Backbone<span>Agency</span></a>
-</div>
-<nav class="nav">
-<ul>
-<li><a href="#accueil">Accueil</a></li>
-<li class="dropdown">
-    <a href="#services">Services <i data-feather="chevron-down" class="icon-small"></i></a>
-    <ul class="dropdown-menu">
-        <li><a href="#automation">Automatisation IA</a></li>
-        <li><a href="#content">Contenus Digitaux</a></li>
-        <li><a href="#training">Formations</a></li>
-        <li><a href="#security">Sécurité Informatique</a></li>
-        <li><a href="#consulting">Conseil</a></li>
-    </ul>
-</li>
-<li><a href="#boutique">Boutique</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-<div class="theme-toggle">
-<button aria-label="Changer de thème" id="theme-toggle-btn">
-<i data-feather="sun"></i>
-</button>
-</div>
-<div class="mobile-menu-btn">
-<button aria-label="Menu">
-<i data-feather="menu"></i>
-</button>
-</div>
-</div>
-</header>
-<!-- Section Accueil -->
-<section class="hero" id="accueil">
-<div class="container">
-<div class="hero-content">
-<h1 class="fade-in">Votre partenaire pour une transformation numérique réussie</h1>
-<p class="fade-in">Solutions d'automatisation IA, contenus digitaux, formations en ligne et conseil technique pour propulser votre entreprise vers l'avenir.</p>
-<div class="cta-container fade-in">
-<a class="btn btn-primary pulse-animation" href="#contact">Commencez gratuitement</a>
-<a class="btn btn-outline" href="#services">Découvrir nos services</a>
-</div>
-</div>
-<div class="hero-svg">
-<!-- SVG tech abstrait sera ajouté ici -->
-</div>
-</div>
-</section>
-
-<!-- Bannière d'annonce -->
-<section class="announcement-banner">
-    <div class="container">
-        <div class="announcement-content">
-            <i data-feather="star"></i>
-            <h3>Nouveau : Formation Découverte des IA pour entreprises</h3>
-            <p>Apprenez à utiliser l'IA pour transformer votre business</p>
-            <a href="#formation-ia" class="btn btn-small">En savoir plus</a>
-        </div>
-    </div>
-</section>
-
-<!-- Section Services -->
-<section class="services" id="services" role="region" aria-labelledby="services-heading">
-<div class="container">
-<div class="section-header">
-<h2 id="services-heading">Nos Services</h2>
-<p>Des solutions innovantes pour votre transformation numérique</p>
-</div>
-<div class="services-grid">
-<article class="service-card fade-in" id="automation">
-<div class="service-icon">
-<i data-feather="cpu"></i>
-</div>
-<h3>Automatisation IA</h3>
-<p>Simplifiez vos opérations avec nos solutions intelligentes. Chatbots, workflows automatisés et outils d'analyse prédictive.</p>
-<a class="btn-service" href="#contact">En savoir plus</a>
-</article>
-<article class="service-card fade-in" id="content">
-<div class="service-icon">
-<i data-feather="edit-3"></i>
-</div>
-<h3>Contenus Digitaux</h3>
-<p>Créez des supports qui captivent et convertissent. Vidéos, articles SEO, infographies et supports marketing.</p>
-<a class="btn-service" href="#contact">En savoir plus</a>
-</article>
-<article class="service-card fade-in" id="training">
-<div class="service-icon">
-<i data-feather="book-open"></i>
-</div>
-<h3>Formations en Ligne</h3>
-<p>Formez-vous aux compétences du futur. Cours sur l'IA, le marketing digital et la transformation numérique.</p>
-<a class="btn-service" href="#contact">En savoir plus</a>
-</article>
-<article class="service-card fade-in" id="consulting">
-<div class="service-icon">
-<i data-feather="message-circle"></i>
-</div>
-<h3>Conseil</h3>
-<p>Un accompagnement stratégique pour vos projets. Audits, stratégies et accompagnement à la mise en œuvre.</p>
-<a class="btn-service" href="#contact">En savoir plus</a>
-</article>
-<article class="service-card fade-in" id="security">
-    <div class="service-icon">
-        <i data-feather="shield"></i>
-    </div>
-    <h3>Sécurité Informatique</h3>
-    <p>Protégez votre entreprise contre les cybermenaces. Audits de sécurité, formation de vos équipes et mise en place de protocoles de protection.</p>
-    <a class="btn-service" href="#contact">En savoir plus</a>
-</article>
-<article class="service-card fade-in">
-    <div class="service-icon">
-        <i data-feather="zap"></i>
-    </div>
-    <h3>Formation IA Entreprise</h3>
-    <p>Découvrez les différentes IA du marché, leurs fonctionnalités et les applications concrètes pour votre secteur d'activité.</p>
-    <a class="btn-service" href="#formation-ia">En savoir plus</a>
-</article>
-</div>
-</div>
-</section>
-
-<!-- Section Formation IA mise en avant -->
-<section class="featured-training" id="formation-ia">
-    <div class="container">
-        <div class="featured-content">
-            <div class="featured-text">
-                <h2>Formation Découverte des IA</h2>
-                <p class="subtitle">La clé pour comprendre et exploiter l'IA dans votre entreprise</p>
-                <ul class="feature-list">
-                    <li><i data-feather="check-circle"></i> Panorama complet des IA disponibles sur le marché</li>
-                    <li><i data-feather="check-circle"></i> Applications concrètes pour votre secteur</li>
-                    <li><i data-feather="check-circle"></i> 3 heures de formation + certification</li>
-                    <li><i data-feather="check-circle"></i> Support post-formation pendant 1 mois</li>
+    <!-- Header avec navigation fixe -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" id="logo-link">Backbone<span>Agency</span></a>
+            </div>
+            <nav class="nav">
+                <ul class="main-menu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#services">Services <i data-feather="chevron-down" class="icon-small"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#automation">Automatisation IA</a></li>
+                            <li><a href="#content">Contenus Digitaux</a></li>
+                            <li><a href="#training">Formations</a></li>
+                            <li><a href="#formation-ia">Formation IA Entreprise</a></li>
+                            <li><a href="#security">Sécurité Informatique</a></li>
+                            <li><a href="#consulting">Conseil</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#boutique">Boutique</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="cta-container">
-                    <a href="#boutique" class="btn btn-primary">S'inscrire maintenant</a>
-                    <a href="#contact" class="btn btn-outline">Demander plus d'infos</a>
-                </div>
+            </nav>
+            <div class="theme-toggle">
+                <button aria-label="Changer de thème" id="theme-toggle-btn">
+                    <i data-feather="sun"></i>
+                </button>
             </div>
-            <div class="featured-image">
-                <img src="assets/images/formation-ia.svg" alt="Formation IA pour entreprises">
+            <div class="mobile-menu-btn">
+                <button aria-label="Menu">
+                    <i data-feather="menu"></i>
+                </button>
             </div>
         </div>
+    </header>
+    
+    <!-- Section Accueil -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Votre partenaire pour une transformation numérique réussie</h1>
+                <p class="fade-in">Solutions d'automatisation IA, contenus digitaux, formations en ligne et conseil technique pour propulser votre entreprise vers l'avenir.</p>
+                <div class="cta-container fade-in">
+                    <a class="btn btn-primary pulse-animation" href="#contact">Commencez gratuitement</a>
+                    <a class="btn btn-outline" href="#services">Découvrir nos services</a>
+                </div>
+            </div>
+            <div class="hero-svg">
+                <!-- SVG tech abstrait sera ajouté ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bannière d'annonce -->
+    <section class="announcement-banner">
+        <div class="container">
+            <div class="announcement-content">
+                <i data-feather="star"></i>
+                <h3>Nouveau : Formation Découverte des IA pour entreprises</h3>
+                <p>Apprenez à utiliser l'IA pour transformer votre business</p>
+                <a href="#formation-ia" class="btn btn-small">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section class="services" id="services" role="region" aria-labelledby="services-heading">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="services-heading">Nos Services</h2>
+                <p>Des solutions innovantes pour votre transformation numérique</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card fade-in" id="automation">
+                    <div class="service-icon">
+                        <i data-feather="cpu"></i>
+                    </div>
+                    <h3>Automatisation IA</h3>
+                    <p>Simplifiez vos opérations avec nos solutions intelligentes. Chatbots, workflows automatisés et outils d'analyse prédictive.</p>
+                    <a class="btn-service" href="#contact">En savoir plus</a>
+                </article>
+                <article class="service-card fade-in" id="content">
+                    <div class="service-icon">
+                        <i data-feather="edit-3"></i>
+                    </div>
+                    <h3>Contenus Digitaux</h3>
+                    <p>Créez des supports qui captivent et convertissent. Vidéos, articles SEO, infographies et supports marketing.</p>
+                    <a class="btn-service" href="#contact">En savoir plus</a>
+                </article>
+                <article class="service-card fade-in" id="training">
+                    <div class="service-icon">
+                        <i data-feather="book-open"></i>
+                    </div>
+                    <h3>Formations en Ligne</h3>
+                    <p>Formez-vous aux compétences du futur. Cours sur l'IA, le marketing digital et la transformation numérique.</p>
+                    <a class="btn-service" href="#contact">En savoir plus</a>
+                </article>
+                <article class="service-card fade-in" id="consulting">
+                    <div class="service-icon">
+                        <i data-feather="message-circle"></i>
+                    </div>
+                    <h3>Conseil</h3>
+                    <p>Un accompagnement stratégique pour vos projets. Audits, stratégies et accompagnement à la mise en œuvre.</p>
+                    <a class="btn-service" href="#contact">En savoir plus</a>
+                </article>
+                <article class="service-card fade-in" id="security">
+                    <div class="service-icon">
+                        <i data-feather="shield"></i>
+                    </div>
+                    <h3>Sécurité Informatique</h3>
+                    <p>Protégez votre entreprise contre les cybermenaces. Audits de sécurité, formation de vos équipes et mise en place de protocoles de protection.</p>
+                    <a class="btn-service" href="#contact">En savoir plus</a>
+                </article>
+                <article class="service-card fade-in" id="formation-ia">
+                    <div class="service-icon">
+                        <i data-feather="zap"></i>
+                    </div>
+                    <h3>Formation IA Entreprise</h3>
+                    <p>Découvrez les différentes IA du marché, leurs fonctionnalités et les applications concrètes pour votre secteur d'activité.</p>
+                    <a class="btn-service" href="#formation-ia">En savoir plus</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formation IA mise en avant -->
+    <section class="featured-training" id="formation-ia">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <h2>Formation Découverte des IA</h2>
+                    <p class="subtitle">La clé pour comprendre et exploiter l'IA dans votre entreprise</p>
+                    <ul class="feature-list">
+                        <li><i data-feather="check-circle"></i> Panorama complet des IA disponibles sur le marché</li>
+                        <li><i data-feather="check-circle"></i> Applications concrètes pour votre secteur</li>
+                        <li><i data-feather="check-circle"></i> 3 heures de formation + certification</li>
+                        <li><i data-feather="check-circle"></i> Support post-formation pendant 1 mois</li>
+                    </ul>
+                    <div class="cta-container">
+                        <a href="#boutique" class="btn btn-primary">S'inscrire maintenant</a>
+                        <a href="#contact" class="btn btn-outline">Demander plus d'infos</a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="assets/images/formation-ia.svg" alt="Formation IA pour entreprises">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compteur -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="counters">
+                <div class="counter-item">
+                    <div class="counter" data-count="50">0</div>
+                    <p>Clients satisfaits</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter" data-count="1000">0</div>
+                    <p>Heures d'expertise</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter" data-count="25">0</div>
+                    <p>Projets réussis</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter" data-count="15">0</div>
+                    <p>Experts certifiés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Projet du moment -->
+    <section class="current-project">
+        <div class="container">
+            <div class="project-content">
+                <h2>Projet du moment</h2>
+                <div class="rotating-text">
+                    <span class="text-rotate" data-rotate='["Chatbot e-commerce", "Automatisation RH", "Formation IA avancée", "Audit digital", "Sécurité informatique"]'></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Boutique -->
+    <section class="shop" id="boutique">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Boutique</h2>
+                <p>Des solutions prêtes à l'emploi pour votre entreprise</p>
+            </div>
+            <div class="shop-grid">
+                <div class="product-card fade-in">
+                    <div class="product-badge">Populaire</div>
+                    <h3>Pack Automatisation Essentiel</h3>
+                    <p>Chatbot IA personnalisable + support technique (3 mois)</p>
+                    <div class="product-price">149 €</div>
+                    <a class="btn btn-shop" href="#">Ajouter au panier</a>
+                </div>
+                <div class="product-card fade-in">
+                    <h3>Formation IA pour Débutants</h3>
+                    <p>Cours en ligne avec certification et accès illimité</p>
+                    <div class="product-price">99 €</div>
+                    <a class="btn btn-shop" href="#">Ajouter au panier</a>
+                </div>
+                <div class="product-card fade-in">
+                    <h3>Pack Contenu Marketing</h3>
+                    <p>5 articles SEO optimisés + 1 infographie personnalisée</p>
+                    <div class="product-price">249 €</div>
+                    <a class="btn btn-shop" href="#">Ajouter au panier</a>
+                </div>
+                <div class="product-card fade-in special-offer">
+                    <div class="product-badge">Nouveau</div>
+                    <h3>Formation Découverte des IA</h3>
+                    <p>Maîtrisez les IA existantes et leurs applications concrètes pour votre entreprise (3h + certification)</p>
+                    <div class="product-price">129 €</div>
+                    <a class="btn btn-shop highlight-btn" href="#">Ajouter au panier</a>
+                </div>
+                <div class="product-card premium-card fade-in">
+                    <div class="product-badge">Pack Premium</div>
+                    <h3>IA + Sécurité</h3>
+                    <p>Formation Découverte des IA + Audit de sécurité initial + 1h de conseil stratégique</p>
+                    <div class="product-price">399 €</div>
+                    <div class="product-value">Valeur: 499 €</div>
+                    <a class="btn btn-shop" href="#">Ajouter au panier</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que nos clients disent</h2>
+                <p>Des résultats concrets pour des entreprises comme la vôtre</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"La formation Découverte des IA m'a permis de comprendre comment intégrer un chatbot dans mon e-commerce – un vrai game-changer!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/testimonial-1.jpg" alt="Sophie L.">
+                        <div class="author-info">
+                            <h4>Sophie L.</h4>
+                            <p>Responsable Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"L'audit de sécurité a révélé des failles dont nous n'avions pas conscience. Grâce aux solutions mises en place, nous sommes maintenant beaucoup mieux protégés."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/testimonial-2.jpg" alt="Marc D.">
+                        <div class="author-info">
+                            <h4>Marc D.</h4>
+                            <p>Directeur IT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Le pack IA + Sécurité nous a permis d'optimiser nos processus tout en garantissant la protection de nos données. Un excellent investissement."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/testimonial-3.jpg" alt="Lucie T.">
+                        <div class="author-info">
+                            <h4>Lucie T.</h4>
+                            <p>CEO, Startup e-commerce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section partenaires -->
+    <section class="partners">
+        <div class="container">
+            <div class="partners-grid">
+                <img src="assets/images/partner-1.svg" alt="Partenaire 1">
+                <img src="assets/images/partner-2.svg" alt="Partenaire 2">
+                <img src="assets/images/partner-3.svg" alt="Partenaire 3">
+                <img src="assets/images/partner-4.svg" alt="Partenaire 4">
+            </div>
+        </div>
+    </section>
+
+    
+<!-- SECTION : Nos Résultats en Chiffres -->
+<section class="key-metrics">
+  <div class="container">
+    <div class="section-header">
+      <h2>Nos résultats en chiffres</h2>
+      <p>Des indicateurs concrets sur notre impact dans la transformation numérique des entreprises</p>
     </div>
+    <div class="counters">
+      <div class="counter-item">
+        <div class="counter">+50</div>
+        <p>entreprises accompagnées</p>
+      </div>
+      <div class="counter-item">
+        <div class="counter">+1000</div>
+        <p>heures de conseil IA</p>
+      </div>
+      <div class="counter-item">
+        <div class="counter">4.8/5</div>
+        <p>note moyenne de satisfaction</p>
+      </div>
+      <div class="counter-item">
+        <div class="counter">95%</div>
+        <p>taux de recommandation</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Section Compteur -->
-<section class="counter-section">
-<div class="container">
-<div class="counters">
-<div class="counter-item">
-<div class="counter" data-count="50">0</div>
-<p>Clients satisfaits</p>
-</div>
-<div class="counter-item">
-<div class="counter" data-count="1000">0</div>
-<p>Heures d'expertise</p>
-</div>
-<div class="counter-item">
-<div class="counter" data-count="25">0</div>
-<p>Projets réussis</p>
-</div>
-<div class="counter-item">
-<div class="counter" data-count="15">0</div>
-<p>Experts certifiés</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Section Projet du moment -->
-<section class="current-project">
-<div class="container">
-<div class="project-content">
-<h2>Projet du moment</h2>
-<div class="rotating-text">
-<span class="text-rotate" data-rotate='["Chatbot e-commerce", "Automatisation RH", "Formation IA avancée", "Audit digital", "Sécurité informatique"]'></span>
-</div>
-</div>
-</div>
-</section>
-<!-- Section Boutique -->
-<section class="shop" id="boutique">
-<div class="container">
-<div class="section-header">
-<h2>Notre Boutique</h2>
-<p>Des solutions prêtes à l'emploi pour votre entreprise</p>
-</div>
-<div class="shop-grid">
-<div class="product-card fade-in">
-<div class="product-badge">Populaire</div>
-<h3>Pack Automatisation Essentiel</h3>
-<p>Chatbot IA personnalisable + support technique (3 mois)</p>
-<div class="product-price">149 €</div>
-<a class="btn btn-shop" href="#">Ajouter au panier</a>
-</div>
-<div class="product-card fade-in">
-<h3>Formation IA pour Débutants</h3>
-<p>Cours en ligne avec certification et accès illimité</p>
-<div class="product-price">99 €</div>
-<a class="btn btn-shop" href="#">Ajouter au panier</a>
-</div>
-<div class="product-card fade-in">
-<h3>Pack Contenu Marketing</h3>
-<p>5 articles SEO optimisés + 1 infographie personnalisée</p>
-<div class="product-price">249 €</div>
-<a class="btn btn-shop" href="#">Ajouter au panier</a>
-</div>
-<div class="product-card fade-in special-offer">
-    <div class="product-badge">Nouveau</div>
-    <h3>Formation Découverte des IA</h3>
-    <p>Maîtrisez les IA existantes et leurs applications concrètes pour votre entreprise (3h + certification)</p>
-    <div class="product-price">129 €</div>
-    <a class="btn btn-shop highlight-btn" href="#">Ajouter au panier</a>
-</div>
-<div class="product-card premium-card fade-in">
-    <div class="product-badge">Pack Premium</div>
-    <h3>IA + Sécurité</h3>
-    <p>Formation Découverte des IA + Audit de sécurité initial + 1h de conseil stratégique</p>
-    <div class="product-price">399 €</div>
-    <div class="product-value">Valeur: 499 €</div>
-    <a class="btn btn-shop" href="#">Ajouter au panier</a>
-</div>
-</div>
-</div>
+<!-- SECTION : IA & Sécurité -->
+<section class="ia-securite" id="ia-securite">
+  <div class="container">
+    <div class="section-header">
+      <h2>IA & Sécurité : une combinaison gagnante</h2>
+      <p>Comprenez les risques liés à l'usage des IA en entreprise et apprenez à les prévenir efficacement.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon">
+          <i data-feather="alert-triangle"></i>
+        </div>
+        <h3>Identifiez les risques</h3>
+        <p>Comprendre les failles possibles liées aux IA génératives, aux fuites de données et à la confidentialité.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">
+          <i data-feather="lock"></i>
+        </div>
+        <h3>Adoptez les bons réflexes</h3>
+        <p>Découvrez les bonnes pratiques pour un usage sécurisé de l’intelligence artificielle en entreprise.</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">
+          <i data-feather="check-circle"></i>
+        </div>
+        <h3>Formez vos équipes</h3>
+        <p>Accédez à une formation complète incluant la sécurité numérique appliquée à l’usage de l’IA.</p>
+      </article>
+    </div>
+    <div class="cta-container" style="text-align:center; margin-top:2rem;">
+      <a href="#boutique" class="btn btn-primary">Découvrir notre pack IA + Sécurité</a>
+    </div>
+  </div>
 </section>
 
-<!-- Section témoignages -->
-<section class="testimonials">
-    <div class="container">
-        <div class="section-header">
-            <h2>Ce que nos clients disent</h2>
-            <p>Des résultats concrets pour des entreprises comme la vôtre</p>
-        </div>
-        <div class="testimonial-slider">
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <p>"La formation Découverte des IA m'a permis de comprendre comment intégrer un chatbot dans mon e-commerce – un vrai game-changer!"</p>
-                </div>
-                <div class="testimonial-author">
-                    <img src="assets/images/testimonial-1.jpg" alt="Sophie L.">
-                    <div class="author-info">
-                        <h4>Sophie L.</h4>
-                        <p>Responsable Marketing</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <p>"L'audit de sécurité a révélé des failles dont nous n'avions pas conscience. Grâce aux solutions mises en place, nous sommes maintenant beaucoup mieux protégés."</p>
-                </div>
-                <div class="testimonial-author">
-                    <img src="assets/images/testimonial-2.jpg" alt="Marc D.">
-                    <div class="author-info">
-                        <h4>Marc D.</h4>
-                        <p>Directeur IT</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <p>"Le pack IA + Sécurité nous a permis d'optimiser nos processus tout en garantissant la protection de nos données. Un excellent investissement."</p>
-                </div>
-                <div class="testimonial-author">
-                    <img src="assets/images/testimonial-3.jpg" alt="Lucie T.">
-                    <div class="author-info">
-                        <h4>Lucie T.</h4>
-                        <p>CEO, Startup e-commerce</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- SECTION : Pour qui ? -->
+<section class="for-who">
+  <div class="container">
+    <div class="section-header">
+      <h2>Vous êtes...</h2>
+      <p>Découvrez comment Backbone Agency peut répondre à vos enjeux spécifiques.</p>
     </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <h3>Une PME</h3>
+        <p>Automatisez vos tâches récurrentes et sécurisez vos données sensibles à moindre coût.</p>
+      </article>
+      <article class="service-card">
+        <h3>Un cabinet RH</h3>
+        <p>Exploitez l’IA pour vos recrutements, la gestion des candidatures ou l’onboarding automatisé.</p>
+      </article>
+      <article class="service-card">
+        <h3>Une startup</h3>
+        <p>Boostez votre croissance avec des workflows IA agiles, sécurisés et évolutifs dès le départ.</p>
+      </article>
+    </div>
+  </div>
 </section>
+
 
 <!-- Section Contact -->
-<section class="contact" id="contact">
-<div class="container">
-<div class="section-header">
-<h2>Contactez-nous</h2>
-<p>Discutons de votre projet de transformation numérique</p>
-</div>
-<div class="contact-container">
-<form action="https://formspree.io/f/xyz123" class="contact-form" id="contact-form" method="POST">
-<div class="form-group">
-<label for="name">Nom</label>
-<input id="name" name="name" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="email">Email</label>
-<input id="email" name="email" required="" type="email"/>
-</div>
-<div class="form-group">
-<label for="phone">Téléphone (optionnel)</label>
-<input id="phone" name="phone" type="tel"/>
-</div>
-<div class="form-group">
-<label for="service">Service qui vous intéresse</label>
-<select id="service" name="service">
-    <option value="">Sélectionnez un service</option>
-    <option value="automatisation">Automatisation IA</option>
-    <option value="contenu">Contenus Digitaux</option>
-    <option value="formation">Formations en Ligne</option>
-    <option value="formation-ia">Formation Découverte des IA</option>
-    <option value="securite">Sécurité Informatique</option>
-    <option value="conseil">Conseil</option>
-</select>
-</div>
-<div class="form-group">
-<label for="message">Message</label>
-<textarea id="message" name="message" required="" rows="5"></textarea>
-</div>
-<button class="btn btn-primary" type="submit">Envoyer le message</button>
-</form>
-<div class="contact-info">
-<div class="info-item">
-<i data-feather="mail"></i>
-<p>contact@backboneagency.tech</p>
-</div>
-<div class="info-item">
-<i data-feather="clock"></i>
-<p>Lun-Ven: 9h-18h</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Section partenaires -->
-<section class="partners">
-    <div class="container">
-        <div class="partners-grid">
-            <img src="assets/images/partner-1.svg" alt="Partenaire 1">
-            <img src="assets/images/partner-2.svg" alt="Partenaire 2">
-            <img src="assets/images/partner-3.svg" alt="Partenaire 3">
-            <img src="assets/images/partner-4.svg" alt="Partenaire 4">
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-nous</h2>
+                <p>Discutons de votre projet de transformation numérique</p>
+            </div>
+            <div class="contact-container">
+                <form action="https://formspree.io/f/xyz123" class="contact-form" id="contact-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input id="name" name="name" required="" type="text"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" required="" type="email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone (optionnel)</label>
+                        <input id="phone" name="phone" type="tel"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service qui vous intéresse</label>
+                        <select id="service" name="service">
+                            <option value="">Sélectionnez un service</option>
+                            <option value="automatisation">Automatisation IA</option>
+                            <option value="contenu">Contenus Digitaux</option>
+                            <option value="formation">Formations en Ligne</option>
+                            <option value="formation-ia">Formation Découverte des IA</option>
+                            <option value="securite">Sécurité Informatique</option>
+                            <option value="conseil">Conseil</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="" rows="5"></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Envoyer le message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i data-feather="mail"></i>
+                        <p>contact@backboneagency.tech</p>
+                    </div>
+                    <div class="info-item">
+                        <i data-feather="clock"></i>
+                        <p>Lun-Ven: 9h-18h</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-<div class="container">
-<div class="footer-content">
-<div class="footer-logo">
-<a href="#">Backbone<span>Agency</span></a>
-</div>
-<div class="footer-links">
-<ul>
-<li><a href="#">Mentions légales</a></li>
-<li><a href="#">Politique de confidentialité</a></li>
-<li><a href="#">Conditions générales de vente</a></li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2025 Backbone Agency. Tous droits réservés.</p>
-</div>
-</div>
-</footer>
-<!-- Scripts -->
-<script src="assets/js/main.js"></script>
-<script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">Backbone<span>Agency</span></a>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Backbone Agency. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
         feather.replace();
     </script>
+    
+    <!-- Code JavaScript supplémentaire pour le menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menu mobile toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const header = document.querySelector('.header');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                header.classList.toggle('mobile-menu-active');
+            });
+            
+            // Fermer le menu mobile si clic à l'extérieur
+            document.addEventListener('click', function(event) {
+                const isClickInsideNav = event.target.closest('.nav');
+                const isClickOnMenuBtn = event.target.closest('.mobile-menu-btn');
+                
+                if (!isClickInsideNav && !isClickOnMenuBtn && header.classList.contains('mobile-menu-active')) {
+                    header.classList.remove('mobile-menu-active');
+                }
+            });
+        });
+    </script>
 
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/64f42c58d813191008cd1d/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script></body>
+    <!-- Chat Tawk.to -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/64f42c58d813191008cd1d/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+</body>
 </html>
